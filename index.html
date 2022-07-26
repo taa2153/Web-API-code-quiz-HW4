@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Coding Quiz</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <header>
+        <div id="headerScoretimer" class="main-page"></div>
+            <h2 class="viewHighScore">View High Scores</h2> 
+            <h2 class="timer">Time: <span id="timer"></span></h2>
+    </header>
+
+    <div id="startContainer" class="main-page">
+        <div class="Start">
+            <h1>Coding Quiz Challenge</h1>  
+            <button class="btn startQuizBtn" id="buttonStart">Start Quiz</button>
+        </div>    
+    </div>
+
+    <div id="questionContainer" class="question-page">
+        <div class="questions">
+            <div id="question"></div>
+            <div id="answerBtn" class="4answerBtn"></div>
+        </div>
+    </div>
+
+    <div id="correct" class="question-page">
+        <h2>Correct :)!</h2>
+    </div>
+    <div id="wrong" class="qustion-page">
+        <h2>Wrong :( </h2>
+    </div>
+
+
+    <div id="finishedContainer" class="end-of-question-page">
+        <div class="container end">
+         <div id=finishedBanner>
+             <h1>Finish!</h1>
+         </div>  
+         <form id="initial" class="end-of-question-page">
+           <p> Enter Initials:
+             <input type="text" name="initials" id="initials" class="text" />
+             <button class="btn endQuizBtn" id="buttonEnd" type="submit">Submit</button> </p>
+           </form>
+         </div>
+     </div>
+
+     <div id="playerScoreContainer" class="score-page">
+       <div class="scores container">
+         <h1 class="score">High Scores</h1>
+         <ol id="highscorelist" class="scorelist"></ol>
+     <div>
+         <button class="btn homeBtn" id="buttonHome">Home</button>
+         <button class="btn" id="buttonClear">Clear high scores</button>
+     </div>
+     </div>
+ </div>
+
+
+
+    <footer>
+        <div id="footerCreator" class="main-page"></div>
+             <h2>Created by Tasha Akemah</h2> 
+    </footer>
+
+    <script src="./script.js"></script> 
+</body>
+</html>
